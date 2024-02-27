@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Insect</title>
+
+</head>
+
+<body>
+    <div class="screen" id="startScreen">
+        <h1 id="title1">Catch the Insect</h1>
+        <button class="btn" id="start_btn" onclick="showScreen()">Play Game</button>
+    </div>
+
+    <div class="screen2" id="insectSelect">
+        <h1 id="title2">Select Your "favourite" Insect !</h1><br><br>
+        <button onclick="getInsect('insect1')" id="flyBtn"  class="insectBtn">
+            <img id="insect1" alt="Fly" src="http://pngimg.com/uploads/fly/fly_PNG3946.png">
+        </button>
+        <button onclick="getInsect('insect2')" id="mosquitoBtn" class="insectBtn">
+            <img id="insect2" alt="Grasshopper" src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png">
+        </button>
+        <button onclick="getInsect('insect3')" id="roachBtn" class="insectBtn">
+            <img id="insect3" alt="Roach" src="http://pngimg.com/uploads/roach/roach_PNG12163.png">
+        </button>
+        <button onclick="getInsect('insect4')" id="spiderBtn" class="insectBtn">
+            <img id="insect4" alt="Spider" src="http://pngimg.com/uploads/spider/spider_PNG12.png">
+        </button>
+    </div>
+
+
+        
+
+        <div class="gameContainer" id="playContainer">
+            <span class="timer" id="time">TIME:</span>
+            <span class="score" id="score">SCORE:</span>
+            <!-- <img class="insect" id="insect" onclick="generateInsect()"></img> -->
+            <h5 id="message" class="message">
+                Are you annoyed yet? <br>
+                You are playing an impossible game!!
+              </h5>
+              <h5 id="timeoutMsg" class="message">Your time is out. <br>
+            Please Start refresh and start again!</h5>
+        </div>
+    
+
+    <script src="index.js"></script>
+</body>
+
+</html>
